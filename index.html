@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Sanjiv Jagdale | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Ganesh Sanjiv Jagdale - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Ganesh Sanjiv Jagdale" />
+  <meta property="og:title" content="Ganesh Sanjiv Jagdale Portfolio" />
+  <meta property="og:image" content="assets/preview.jpg" />
+  <meta property="og:description" content="Personal introduction portfolio site." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#14b8a6',
+            darkBg: '#0f172a',
+            darkCard: '#1e293b',
+            textLight: '#f1f5f9',
+            accent: '#0ea5e9',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-darkBg text-textLight font-sans min-h-screen pb-20">
+
+  <!-- Navbar -->
+  <nav class="bg-darkCard shadow-md fixed w-full z-30 top-0 left-0">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-primary text-2xl font-bold">Ganesh Jagdale</a>
+        <div class="hidden md:flex space-x-6 font-semibold">
+          <a href="#about" class="hover:text-primary transition">About</a>
+          <a href="#achievements" class="hover:text-primary transition">Achievements</a>
+          <a href="#goals" class="hover:text-primary transition">Goals</a>
+          <a href="#personal" class="hover:text-primary transition">Personal</a>
+          <a href="#contact" class="hover:text-primary transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-textLight" aria-label="Toggle Menu">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-darkCard border-t border-slate-700">
+      <a href="#about" class="block px-4 py-3 hover:bg-slate-800">About</a>
+      <a href="#achievements" class="block px-4 py-3 hover:bg-slate-800">Achievements</a>
+      <a href="#goals" class="block px-4 py-3 hover:bg-slate-800">Goals</a>
+      <a href="#personal" class="block px-4 py-3 hover:bg-slate-800">Personal</a>
+      <a href="#contact" class="block px-4 py-3 hover:bg-slate-800">Contact</a>
+    </div>
+  </nav>
+
+  <div class="h-16"></div>
+
+  <!-- Welcome -->
+  <header class="max-w-6xl mx-auto px-6 py-12 bg-darkCard rounded-xl shadow-lg mb-12 text-center">
+    <h1 class="text-4xl font-extrabold text-primary mb-4">Welcome to My Portfolio</h1>
+    <p class="max-w-xl mx-auto mb-6 text-slate-300">Hi there! I'm excited to share my journey, dreams, and digital world with you.</p>
+    <div class="flex flex-wrap justify-center items-center gap-10">
+      <img src="my.JPG" alt="Ganesh Jagdale" class="rounded-full border-4 border-primary w-40 h-40 object-cover shadow-lg" />
+      <video controls class="rounded-lg shadow-lg w-96 max-w-full">
+        <source src="vi.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </header>
+
+  <!-- Main Sections -->
+  <main class="max-w-6xl mx-auto px-6 space-y-16">
+
+    <!-- About -->
+    <section id="about" class="bg-darkCard rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-l-4 border-primary pl-4">About Me</h2>
+      <p><strong>Name:</strong> Ganesh Sanjiv Jagdale</p>
+      <p><strong>Location:</strong> Boisar, Mumbai, Maharashtra</p>
+      <p><strong>Education:</strong> B.Tech in Electronics and Computer Science</p>
+      <p><strong>Languages:</strong> English, Hindi, Marathi, etc.</p>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="bg-darkCard rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-l-4 border-primary pl-4">Achievements</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Won blind C coding competition in 2024</li>
+        <li>Completed 30 days of code challenge</li>
+        <li>Built a parking app using JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="bg-darkCard rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-l-4 border-primary pl-4">Future Goals</h2>
+      <p>I aim to become a software developer who creates impactful and scalable solutions, contribute to open-source, and build tools that improve lives through tech.</p>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="bg-darkCard rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-l-4 border-primary pl-4">Personal Side</h2>
+      <h3 class="text-2xl font-semibold mt-4 mb-2 text-accent">Hobbies</h3>
+      <p>Photography, cycling, and solving puzzles.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-accent">Role Models</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Ratan Tata</strong> – for his philanthropy and ethics.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-accent">Favorites</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Books:</strong> "Atomic Habits", "Deep Work"</li>
+        <li><strong>Websites:</strong> freeCodeCamp, GitHub</li>
+        <li><strong>Startups:</strong> Notion, Duolingo</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-accent">Volunteering</h3>
+      <p>Taught underprivileged children math and computer basics at a local NGO.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-darkCard rounded-xl p-8 shadow-md">
+      <h2 class="text-3xl font-semibold mb-8 border-l-4 border-primary pl-4 text-center">📬 Contact Me</h2>
+
+      <div class="flex flex-wrap justify-center sm:justify-between items-center gap-6 mb-10 text-center sm:text-left">
+        <p><strong>Phone:</strong> <a href="tel:+919373441208" class="underline hover:text-primary">+91 9373441208</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919373441208" target="_blank" class="underline hover:text-primary">Chat with me</a></p>
+        <p><strong>Email:</strong> <a href="mailto:ganeshjagdale2659@gmail.com" class="underline hover:text-primary">ganeshjagdale2659@gmail.com</a></p>
+      </div>
+
+      <h3 class="text-2xl font-semibold mb-6">📍 Location</h3>
+      <div class="mb-10 rounded-lg overflow-hidden shadow-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9051521704925!2d72.75884511490047!3d19.07903028708753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7485c0ebf2d%3A0x100406d16e9e8c8!2sBoisar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1640000000000"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+      </div>
+
+      <h3 class="text-2xl font-semibold mb-6">🔗 Social Media</h3>
+      <ul class="flex flex-wrap justify-center gap-6 mb-10">
+        <li><a href="https://www.instagram.com/gana_u_m1d" target="_blank" class="btn btn-outline border-primary text-primary"><i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+        <li><a href="https://www.threads.net/@gana_u_m1d" target="_blank" class="btn btn-outline border-primary text-primary"><i class="fab fa-threads mr-2"></i>Threads</a></li>
+        <li><a href="https://github.com/GANA26" target="_blank" class="btn btn-outline border-primary text-primary"><i class="fab fa-github mr-2"></i>GitHub</a></li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mb-6">📨 Contact Form</h3>
+      <form action="https://formspree.io/f/xanokgaz" method="POST" class="space-y-6 max-w-lg mx-auto">
+        <div>
+          <label for="name" class="block mb-1 font-medium">Your Name:</label>
+          <input type="text" id="name" name="name" required class="input input-bordered w-full" />
+        </div>
+        <div>
+          <label for="email" class="block mb-1 font-medium">Your Email:</label>
+          <input type="email" id="email" name="_replyto" required class="input input-bordered w-full" />
+        </div>
+        <div>
+          <label for="message" class="block mb-1 font-medium">Your Message:</label>
+          <textarea id="message" name="message" required rows="5" class="textarea textarea-bordered w-full"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-darkCard text-slate-400 text-center py-5 shadow-inner fixed bottom-0 w-full">
+    <p class="text-sm">© 2025 Ganesh Sanjiv Jagdale. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
